@@ -14,7 +14,7 @@ productsArr !: IProduct[]
   ) { }
 
   ngOnInit(): void {
-
+   this.getProducts()
   }
 
   getProducts(){
@@ -26,5 +26,8 @@ productsArr !: IProduct[]
 
     }
    })
+  }
+  onAddProduct(){
+
   }
 }

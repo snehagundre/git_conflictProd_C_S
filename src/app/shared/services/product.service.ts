@@ -7,7 +7,7 @@ import { Observable, of } from 'rxjs';
 })
 export class ProductService {
 
-  productsArr:IProduct[] = [
+ productsArr: IProduct[] = [
   {
     id: 'PRD-101',
     name: 'Apple iPhone 14',
@@ -15,7 +15,7 @@ export class ProductService {
     price: 69999,
     rating: 4.6,
     stock: 15,
-    image: 'https://via.placeholder.com/150',
+    image: 'https://m.media-amazon.com/images/I/61bK6PMOC3L._SL1500_.jpg',
     description: 'Latest iPhone with A15 Bionic chip'
   },
   {
@@ -25,7 +25,7 @@ export class ProductService {
     price: 64999,
     rating: 4.5,
     stock: 20,
-    image: 'https://via.placeholder.com/150',
+    image: 'https://m.media-amazon.com/images/I/71lD7eGdW-L._SL1500_.jpg',
     description: 'Flagship Samsung phone with AMOLED display'
   },
   {
@@ -35,7 +35,7 @@ export class ProductService {
     price: 29999,
     rating: 4.8,
     stock: 10,
-    image: 'https://via.placeholder.com/150',
+    image: 'https://m.media-amazon.com/images/I/61bK6PMOC3L._SL1500_.jpg',
     description: 'Noise cancelling wireless headphones'
   },
   {
@@ -45,7 +45,7 @@ export class ProductService {
     price: 55999,
     rating: 4.4,
     stock: 8,
-    image: 'https://via.placeholder.com/150',
+    image: 'https://m.media-amazon.com/images/I/61bK6PMOC3L._SL1500_.jpg',
     description: '15-inch laptop for work and study'
   },
   {
@@ -55,7 +55,7 @@ export class ProductService {
     price: 4999,
     rating: 4.3,
     stock: 25,
-    image: 'https://via.placeholder.com/150',
+    image: 'https://m.media-amazon.com/images/I/61bK6PMOC3L._SL1500_.jpg',
     description: 'Comfortable running shoes for daily use'
   },
   {
@@ -65,7 +65,7 @@ export class ProductService {
     price: 2999,
     rating: 4.1,
     stock: 30,
-    image: 'https://via.placeholder.com/150',
+    image: 'https://m.media-amazon.com/images/I/61bK6PMOC3L._SL1500_.jpg',
     description: 'Fitness smartwatch with heart-rate tracking'
   }
 ];
