@@ -1,1 +1,17 @@
-<p>prod-form works!</p>
+  <div class="card">
+    <div class="card-body">
+        <form [formGroup]="productForm" (ngSubmit)="productAdd()">
+            <div class="form-group">
+                <label>Name</label>
+                <input formControlName="name" class="form-control">
+            </div>
+             <div class="form-group">
+                <label>Name</label>
+                <input formControlName="description" class="form-control">
+            </div>
+
+            <button class="btn btn-sm btn-primary" type="submit" *ngIf="!isIneditMode">Add Product</button>
+            <button class="btn btn-sm btn-primary" type="button" *ngIf="isIneditMode" (click)="onUpdate()">update Product</button>
+        </form>
+    </div>
+  </div>
