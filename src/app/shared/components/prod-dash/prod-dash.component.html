@@ -12,9 +12,7 @@
         <div class="col-md-4 mb-3" *ngFor="let product of productsArr">
 
             <mat-card class="h-100">
-
                 <img mat-card-image [src]="product.image" [alt]="product.name">
-
                 <mat-card-header>
                     <mat-card-title>{{ product.name }}</mat-card-title>
                     <mat-card-subtitle>{{ product.category }}</mat-card-subtitle>
