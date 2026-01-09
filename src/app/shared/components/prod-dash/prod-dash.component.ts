@@ -14,7 +14,7 @@ productsArr !: IProduct[]
   ) { }
 
   ngOnInit(): void {
-
+   this.getProducts()
   }
 
   getProducts(){
