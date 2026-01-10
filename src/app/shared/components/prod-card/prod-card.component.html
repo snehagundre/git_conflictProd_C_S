@@ -1,1 +1,14 @@
-<p>prod-card works!</p>
+<div class="card mb-3" *ngFor="let prod of productsArr">
+  <img [src]="prod.image" class="card-img-top" />
+
+  <div class="card-body">
+    <h5>{{ prod.name }}</h5>
+    <p>{{ prod.category }} |  {{ prod.rating }}</p>
+    <p>₹{{ prod.price }}</p>
+
+    <button class="btn btn-danger"
+            (click)="onRemoveProduct(prod.id)">
+      Remove
+    </button>
+  </div>
+</div>

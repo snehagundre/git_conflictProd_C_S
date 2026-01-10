@@ -1,1 +1,17 @@
-<p>get-confirm works!</p>
+<div class="card text-center">
+  <div class="card-body">
+    <p>{{ msg }}</p>
+
+    <div class="d-flex justify-content-center gap-3 mt-3">
+      <button mat-mini-fab color="primary"
+              (click)="onClose(true)">
+        <mat-icon>check</mat-icon>
+      </button>
+
+      <button mat-mini-fab color="warn"
+              (click)="onClose(false)">
+        <mat-icon>close</mat-icon>
+      </button>
+    </div>
+  </div>
+</div>
