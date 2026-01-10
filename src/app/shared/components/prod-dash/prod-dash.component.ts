@@ -27,7 +27,8 @@ productsArr !: IProduct[]
     }
    })
   }
-  onAddProduct(){
 
-  }
+
+
+
 }
