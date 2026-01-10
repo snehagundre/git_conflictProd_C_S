@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { IProduct, Iresponse } from '../models/prod';
-import { Observable, of } from 'rxjs';
+import { Observable, of, Subject } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -98,6 +98,20 @@ export class ProductService {
       }
     });
   }
+  editProduct$:Subject<IProduct>=new Subject()
 
+fetchAllProducts() : Observable<Iresponse<IProduct[]>>{
+   return of({
+    success : true,
+    massage :{
+      msg:`All Products feteched successfully...!!!`,
+      data: this.productsArr
+    }
+   })
+}
 
+updateProduct(updateObj:IProduct){
+ let getIndex=this.productsArr.findIndex(p=>p.id===updateObj.id)
+  this.productsArr[getIndex]=updateObj
+}
 }

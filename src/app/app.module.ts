@@ -12,7 +12,9 @@ import { ProdDashComponent } from './shared/components/prod-dash/prod-dash.compo
 import { ProdFormComponent } from './shared/components/prod-form/prod-form.component';
 import { ProdCardComponent } from './shared/components/prod-card/prod-card.component';
 import { GetConfirmComponent } from './shared/components/get-confirm/get-confirm.component';
-import { FormsModule } from '@angular/forms';
+
+import { ReactiveFormsModule } from '@angular/forms';
+
 
 @NgModule({
   declarations: [
@@ -25,6 +27,7 @@ import { FormsModule } from '@angular/forms';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
+
     MatButtonModule,
     MatSnackBarModule,
     MatCardModule,
