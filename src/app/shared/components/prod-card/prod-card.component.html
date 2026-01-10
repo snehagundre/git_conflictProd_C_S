@@ -1,14 +1,23 @@
-<div class="card mb-3" *ngFor="let prod of productsArr">
-  <img [src]="prod.image" class="card-img-top" />
+ <div class=" col-md-6 offset-md-3">
 
-  <div class="card-body">
-    <h5>{{ prod.name }}</h5>
-    <p>{{ prod.category }} |  {{ prod.rating }}</p>
-    <p>₹{{ prod.price }}</p>
+    <div class="card mb-3" *ngFor="let prod of productsArr">
+      <img [src]="prod.image" class="card-img-top" />
 
-    <button class="btn btn-danger"
-            (click)="onRemoveProduct(prod.id)">
-      Remove
-    </button>
-  </div>
-</div>
+      <div class="card-body">
+        <h5>{{ prod.name }}</h5>
+        <p>{{ prod.category }} | {{ prod.rating }}</p>
+        <p>₹{{ prod.price }}</p>
+        <div class="d-flex justify-content-between">
+          <button mat-raised-button color="primary">Edit</button>
+          <button
+            (click)="onRemoveProduct(prod.id)"
+            mat-raised-button
+            color="warn"
+          >
+            Remove
+          </button>
+        </div>
+      </div>
+    </div>
+
+

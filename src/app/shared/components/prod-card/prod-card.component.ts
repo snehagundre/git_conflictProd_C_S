@@ -16,9 +16,18 @@ export class ProdCardComponent implements OnInit {
     private _productService: ProductService,
     private _dialog: MatDialog,
     private _snackBar: SnackbarService
-  ) {}
+  ) { }
 
-  ngOnInit(): void {}
+
+
+  ngOnInit(): void {
+    this._productService.fetchAllProducts()
+      .subscribe(res => this.productsArr = res.massage.data);
+  }
+
+
+
+
 
   onRemoveProduct(id: string) {
     let matcoFig = new MatDialogConfig();
